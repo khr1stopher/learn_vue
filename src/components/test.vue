@@ -23,6 +23,10 @@
 		</button>
 		<hr>
 		<input type="text" v-on:keyup="typing" v-on:keyup.enter="typingEnter">
+		<hr>
+		{{ fullname }}
+		<br>
+		{{ msg }}
 	</div>
 </template>
 
@@ -55,6 +59,17 @@
 			},
 			typingEnter () {
 				alert("enter")
+			}
+		},
+		computed: {
+			fullname () {
+				return this.user.firstname + ' ' + this.user.lastname;
+			}
+		},
+		props: {
+			msg: {
+				type: String,
+				default: "mensaje por defecto"
 			}
 		}
 	}

@@ -1,16 +1,24 @@
 <template>
     <div id="app">
         <h1>componente test</h1>
-        <test/>
+        <nav>
+            <ul>
+                <li><router-link to="/test"> Test </router-link></li>
+                <li><router-link to="/"> User </router-link></li>
+            </ul>
+        </nav>
+        <router-view/>
     </div>
 </template>
 
 <script>
-import test from './components/test.vue';
+// import test from './components/test.vue';
+// import user from './components/user.vue';
 export default {
   name: 'App',
   components: {
-    test
+    // test,
+    // user
   }
 }
 </script>
