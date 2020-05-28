@@ -40,5 +40,9 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/Archi-R/learn_vue.git",
+  "author": "Archi-R <kkromans009@gmail.com>",
+  "license": "MIT"
 }
