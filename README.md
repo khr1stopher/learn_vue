@@ -24,3 +24,5 @@ npm run lint
 ```
 npm run start
 ```
+
+proyect deploy in dir ./dist
